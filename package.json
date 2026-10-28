@@ -1,0 +1,14 @@
+{
+  "name": "mobile-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Appium server tooling for the Python mobile automation suite",
+  "scripts": {
+    "appium": "appium",
+    "driver:install": "appium driver install uiautomator2",
+    "driver:doctor": "appium driver doctor uiautomator2"
+  },
+  "devDependencies": {
+    "appium": "^3.0.0"
+  }
+}

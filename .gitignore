@@ -1,0 +1,30 @@
+# Python environments and generated files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Node dependencies
+node_modules/
+
+# Local configuration, credentials, and apps
+.env
+.env.*
+!.env.example
+*.apk
+*.aab
+local.properties
+
+# Test artifacts and editor files
+reports/
+screenshots/
+logs/
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
