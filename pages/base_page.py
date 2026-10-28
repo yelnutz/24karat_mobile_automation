@@ -31,6 +31,13 @@ class BasePage:
     def get_text(self, locator: Locator) -> str:
         return self.wait_for_visible(locator).text
 
+    def is_present(self, locator: Locator) -> bool:
+        """Check for an element without an explicit wait or action if absent.
+
+        Presence does not require the element to be visible or clickable.
+        """
+        return bool(self.driver.find_elements(*locator))
+
     def is_visible(self, locator: Locator) -> bool:
         try:
             self.wait_for_visible(locator)
